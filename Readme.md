@@ -14,7 +14,7 @@
 
 ###CPP 代码的使用
 
-​	**C++代码仅提供姿态检测 **
+**C++代码仅提供姿态检测 **
 
 ```c++
 #include "AliveDetector.h"
@@ -33,7 +33,6 @@ int main()
     return 0;
 }
 ```
-
 ### Android Demo
 
 提供了简单的Demo工程 ， 需要依赖OpenCV3.4 和安装NDK。若不想使用OpenCV3.4 和繁琐的编译步骤，提供了编译好的 so 库
