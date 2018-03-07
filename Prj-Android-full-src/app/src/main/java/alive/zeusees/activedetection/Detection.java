@@ -265,7 +265,7 @@ public class Detection extends Activity implements SurfaceHolder.Callback,Camera
         }
 
         parameters.setPreviewSize(PreviewWidth, PreviewHeight); //获得摄像区域的大小
-        parameters.setPictureSize(PreviewWidth, PreviewHeight);//设置拍出来的屏幕大小
+        //parameters.setPictureSize(PreviewWidth, PreviewHeight);//设置拍出来的屏幕大小
         //
         camera.setParameters(parameters);//把上面的设置 赋给摄像头
         try {
