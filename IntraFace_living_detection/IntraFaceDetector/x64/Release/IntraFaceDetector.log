@@ -1,0 +1,53 @@
+﻿生成启动时间为 2018/3/25 16:25:37。
+     1>项目“C:\Users\syan\Downloads\IntraFace-v1.2\IntraFaceDetector\IntraFaceDetector.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I../include/ /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt ..\src\binary_model_file.cpp ..\src\DemoDetector.cpp
+         binary_model_file.cpp
+         DemoDetector.cpp
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(80): warning C4251: “INTRAFACE::FaceAlignment::m_DR”: class“std::vector<cv::Mat,std::allocator<_Ty>>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(80): warning C4251: “INTRAFACE::FaceAlignment::m_Db”: class“std::vector<cv::Mat,std::allocator<_Ty>>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(80): warning C4251: “INTRAFACE::FaceAlignment::m_TR”: class“std::vector<cv::Mat,std::allocator<_Ty>>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(80): warning C4251: “INTRAFACE::FaceAlignment::m_Tb”: class“std::vector<cv::Mat,std::allocator<_Ty>>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(81): warning C4251: “INTRAFACE::FaceAlignment::m_winsize”: class“std::vector<int,std::allocator<_Ty>>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(82): warning C4251: “INTRAFACE::FaceAlignment::m_flags”: class“std::vector<bool,std::allocator<_Ty>>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=bool
+                 ]
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(83): warning C4251: “INTRAFACE::FaceAlignment::m_w”: class“cv::Mat”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 C:\Users\syan\Downloads\IntraFace-v1.2\include\opencv2/core/core.hpp(1684) : 参见“cv::Mat”的声明
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(84): warning C4251: “INTRAFACE::FaceAlignment::m_meanShape2D”: class“cv::Mat”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 C:\Users\syan\Downloads\IntraFace-v1.2\include\opencv2/core/core.hpp(1684) : 参见“cv::Mat”的声明
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(86): warning C4251: “INTRAFACE::FaceAlignment::m_cropROI”: class“cv::Rect_<int>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+     1>C:\Users\syan\Downloads\IntraFace-v1.2\include\intraface/FaceAlignment.h(87): warning C4251: “INTRAFACE::FaceAlignment::m_offset”: class“cv::Rect_<double>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\syan\Downloads\IntraFace-v1.2\x64\Release\IntraFaceDetector.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../lib/Release/ opencv_core246.lib opencv_highgui246.lib opencv_imgproc246.lib opencv_objdetect246.lib IntraFaceDLL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\syan\Downloads\IntraFace-v1.2\x64\Release\IntraFaceDetector.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\syan\Downloads\IntraFace-v1.2\x64\Release\IntraFaceDetector.lib" /MACHINE:X64 x64\Release\binary_model_file.obj
+         x64\Release\DemoDetector.obj
+         正在生成代码
+         已完成代码的生成
+         IntraFaceDetector.vcxproj -> C:\Users\syan\Downloads\IntraFace-v1.2\x64\Release\IntraFaceDetector.exe
+     1>已完成生成项目“C:\Users\syan\Downloads\IntraFace-v1.2\IntraFaceDetector\IntraFaceDetector.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.61

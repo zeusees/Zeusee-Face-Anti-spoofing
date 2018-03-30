@@ -1,0 +1,13 @@
+﻿生成启动时间为 2018/3/30 12:16:33。
+     1>项目“C:\Users\syan\Downloads\IntraFace-v1.2\IntraFaceTracker\IntraFaceTracker.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\syan\Downloads\IntraFace-v1.2\x64\Release\IntraFaceTracker.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../lib/Release/ opencv_calib3d246.lib opencv_core246.lib opencv_highgui246.lib opencv_imgproc246.lib opencv_objdetect246.lib IntraFaceDLL.lib opencv_core246.lib opencv_highgui246.lib opencv_imgproc246.lib opencv_objdetect246.lib IntraFaceDLL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\syan\Downloads\IntraFace-v1.2\x64\Release\IntraFaceTracker.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\syan\Downloads\IntraFace-v1.2\x64\Release\IntraFaceTracker.lib" /MACHINE:X64 x64\Release\binary_model_file.obj
+         x64\Release\DemoTracker.obj
+         正在生成代码
+         已完成代码的生成
+         IntraFaceTracker.vcxproj -> C:\Users\syan\Downloads\IntraFace-v1.2\x64\Release\IntraFaceTracker.exe
+     1>已完成生成项目“C:\Users\syan\Downloads\IntraFace-v1.2\IntraFaceTracker\IntraFaceTracker.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.10

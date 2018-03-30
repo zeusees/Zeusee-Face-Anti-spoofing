@@ -1,0 +1,65 @@
+﻿Build started 1/25/2014 12:01:51 PM.
+     1>Project "C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\IntraFaceTracker\IntraFaceTracker.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I../include/ /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt ..\src\DemoTracker.cpp
+         DemoTracker.cpp
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/Marcos.h(45): warning C4005: 'max' : macro redefinition
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\shared\minwindef.h(193) : see previous definition of 'max'
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(80): warning C4251: 'INTRAFACE::FaceAlignment::m_DR' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(80): warning C4251: 'INTRAFACE::FaceAlignment::m_Db' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(80): warning C4251: 'INTRAFACE::FaceAlignment::m_TR' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(80): warning C4251: 'INTRAFACE::FaceAlignment::m_Tb' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(81): warning C4251: 'INTRAFACE::FaceAlignment::m_winsize' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(82): warning C4251: 'INTRAFACE::FaceAlignment::m_flags' : class 'std::vector<_Ty>' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 with
+                 [
+                     _Ty=bool
+                 ]
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(83): warning C4251: 'INTRAFACE::FaceAlignment::m_w' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\opencv2/core/core.hpp(1684) : see declaration of 'cv::Mat'
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(84): warning C4251: 'INTRAFACE::FaceAlignment::m_meanShape2D' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\opencv2/core/core.hpp(1684) : see declaration of 'cv::Mat'
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(86): warning C4251: 'INTRAFACE::FaceAlignment::m_cropROI' : class 'cv::Rect_<_Tp>' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 with
+                 [
+                     _Tp=int
+                 ]
+     1>C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\include\intraface/FaceAlignment.h(87): warning C4251: 'INTRAFACE::FaceAlignment::m_offset' : class 'cv::Rect_<_Tp>' needs to have dll-interface to be used by clients of class 'INTRAFACE::FaceAlignment'
+                 with
+                 [
+                     _Tp=double
+                 ]
+     1>..\src\DemoTracker.cpp(57): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>..\src\DemoTracker.cpp(59): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>..\src\DemoTracker.cpp(60): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>..\src\DemoTracker.cpp(61): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>..\src\DemoTracker.cpp(103): warning C4305: 'initializing' : truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\x64\Debug\IntraFaceTracker.exe" /INCREMENTAL /NOLOGO /LIBPATH:../lib/Debug opencv_core246d.lib opencv_highgui246d.lib opencv_imgproc246d.lib opencv_objdetect246d.lib IntraFaceDLLd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\x64\Debug\IntraFaceTracker.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\x64\Debug\IntraFaceTracker.lib" /MACHINE:X64 x64\Debug\binary_model_file.obj
+         x64\Debug\DemoTracker.obj
+         IntraFaceTracker.vcxproj -> C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\x64\Debug\IntraFaceTracker.exe
+     1>Done Building Project "C:\Users\xxiong\Documents\Visual Studio 2012\Projects\win64-VS2012-v1.2(head pose integrated)\IntraFace-v1.2\IntraFaceTracker\IntraFaceTracker.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.80
