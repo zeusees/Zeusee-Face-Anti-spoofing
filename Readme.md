@@ -46,4 +46,3 @@ int main()
 关于单目非配合活体检测我们正在进行数据收集与算法开发，技术交流、捐献数据可以加入下群。
 + 交流群 724142079
 + [活体检测技术博客](http://blog.csdn.net/lsy17096535/article/details/79317452)
-+ [捐赠我们](https://github.com/zeusees/Living-detection/blob/master/temp-images/20171125010608376.png)
