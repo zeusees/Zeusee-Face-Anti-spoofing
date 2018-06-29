@@ -1,7 +1,3 @@
-//
-// Created by 庾金科 on 11/02/2018.
-//
-
 #ifndef ACTIVEDETECTION_ALIVEDETECTOR_H
 #define ACTIVEDETECTION_ALIVEDETECTOR_H
 
