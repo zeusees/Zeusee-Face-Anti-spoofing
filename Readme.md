@@ -4,6 +4,8 @@
 
 ### 更新
 
++ [基于HyperLandmark的活体检测](https://xiangzi.site/2019/04/19/%E6%B4%BB%E4%BD%93%E8%AF%86%E5%88%AB/)
+
 + 增加了基于IntraFace活体检测 (2018.03.30)
 
 
