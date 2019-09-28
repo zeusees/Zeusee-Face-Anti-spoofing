@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ActiveDetection.iml" filepath="$PROJECT_DIR$/ActiveDetection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prj-Android-full-src.iml" filepath="$PROJECT_DIR$/Prj-Android-full-src.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/openCVLibrary340/openCVLibrary340.iml" filepath="$PROJECT_DIR$/openCVLibrary340/openCVLibrary340.iml" />
     </modules>

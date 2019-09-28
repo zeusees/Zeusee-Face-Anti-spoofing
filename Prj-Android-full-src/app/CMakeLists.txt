@@ -5,6 +5,8 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
+include_directories(${CMAKE_SOURCE_DIR}/src/main/cpp/opencv342/sdk/native/jni/include)
+
 add_library( # Sets the name of the library.
              native-lib
 
@@ -37,7 +39,7 @@ target_link_libraries( # Specifies the target library.
                        # included in the NDK.
                        ${log-lib} )
 
-set(OpenCV_DIR "/Users/yujinke/Downloads/OpenCV-android-sdk-3.4/sdk/native/jni")
+set(OpenCV_DIR ${PROJECT_SOURCE_DIR}/opencv342/sdk/native/jni)
 find_package(OpenCV REQUIRED)
 message(STATUS "OpenCV libraries: ${OpenCV_LIBS}")
 target_link_libraries(native-lib ${OpenCV_LIBS})

@@ -6,43 +6,35 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Environment;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.util.List;
 
-public class MainActivity extends Activity {
+import pub.devrel.easypermissions.EasyPermissions;
+
+public class MainActivity extends Activity implements EasyPermissions.PermissionCallbacks {
+
+    private int RC_READ_EXTERNAL_STORAGE = 2;
 
     // Used to load the 'native-lib' library on application startup.
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
 
     private static String[] PERMISSIONS_STORAGE = {
             "android.permission.READ_EXTERNAL_STORAGE",
-            "android.permission.WRITE_EXTERNAL_STORAGE" };
+            "android.permission.WRITE_EXTERNAL_STORAGE"};
 
 
     Button startBtn;
-//    public void requestAllPower() {
-//        if (ContextCompat.checkSelfPermission(this,
-//                Manifest.permission.WRITE_EXTERNAL_STORAGE)
-//                != PackageManager.PERMISSION_GRANTED) {
-//            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-//                    Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-//            } else {
-//                ActivityCompat.requestPermissions(this,
-//                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
-//                                Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
-//            }
-//        }
-//    }
-
 
     public void copyFilesFromAssets(Context context, String oldPath, String newPath) {
         try {
@@ -50,9 +42,8 @@ public class MainActivity extends Activity {
             if (fileNames.length > 0) {
                 // directory
                 File file = new File(newPath);
-                if (!file.mkdir())
-                {
-                    Log.d("mkdir","can't make folder");
+                if (!file.mkdirs()) {
+                    Log.d("mkdir", "can't make folder");
 
                 }
 //                    return false;                // copy recursively
@@ -79,8 +70,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void init()
-    {
+    public void initRecognizer() {
 
         String assetPath = "AliveDetection";
         String sdcardPath = Environment.getExternalStorageDirectory()
@@ -93,30 +83,46 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        init();
 
 
-        startBtn = (Button)findViewById(R.id.button);
+        if (!EasyPermissions.hasPermissions(
+                MainActivity.this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.READ_EXTERNAL_STORAGE
+        )
+        ) {
+
+            EasyPermissions.requestPermissions(
+                    this,
+                    "申请内存权限",
+                    RC_READ_EXTERNAL_STORAGE,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                    Manifest.permission.READ_EXTERNAL_STORAGE
+            );
+        } else {
+            //拷贝模型文件
+            initRecognizer();
+        }
+
+        startBtn = (Button) findViewById(R.id.button);
         startBtn.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(MainActivity.this,Detection.class);
+                        Intent intent = new Intent(MainActivity.this, Detection.class);
                         MainActivity.this.startActivity(intent);
                     }
                 }
         );
-
-
-
-
-        // Example of a call to a native method
-//        TextView tv = (TextView) findViewById(R.id.sample_text);
-//        tv.setText(stringFromJNI());
     }
 
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
+    @Override
+    public void onPermissionsGranted(int requestCode, @NonNull List<String> perms) {
+        initRecognizer();
+    }
+
+    @Override
+    public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
+        Toast.makeText(this, "禁止", Toast.LENGTH_SHORT).show();
+    }
 }

@@ -17,12 +17,6 @@ public class AliveDetection {
         System.loadLibrary("native-lib");
         Log.d("loadlib","load lib");
     }
-    // State of the face
-    // unsure -1
-    // normal 0
-    // shake 1
-    // up 2
-    // down 3
 
     public native static int detect(byte[] data,int height,int width,long handle);
     public native static long init(String folder);
@@ -213,12 +207,4 @@ public class AliveDetection {
         return res;
 
     }
-
-
-
-
-
-
-
-
 }
